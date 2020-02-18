@@ -3,12 +3,12 @@ let oneMore = 0;
 
 const words = [
   "Trevligt!",
-  "kul!",
-  "roligt!",
-  "mysigt!",
-  "angenämt!",
-  "underbart!",
-  "fantastiskt!"
+  "Kul!",
+  "Roligt!",
+  "Mysigt!",
+  "Angenämt!",
+  "Underbart!",
+  "Fantastiskt!"
 ];
 
 // const color = ["red", "green", "black", "tomato", "yellow", "orange", "blue"];
