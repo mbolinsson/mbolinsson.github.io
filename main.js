@@ -2,13 +2,13 @@ let hettan = document.querySelector(".hettan");
 let oneMore = 0;
 
 const words = [
-  "Trevligt!",
-  "Kul!",
-  "Roligt!",
-  "Mysigt!",
-  "Angenämt!",
-  "Underbart!",
-  "Fantastiskt!"
+  "Hej!",
+  "Bonjour!",
+  "Hallo!",
+  "Hello!",
+  "Ciao!",
+  "Cześć!",
+  "Hola!"
 ];
 
 // const color = ["red", "green", "black", "tomato", "yellow", "orange", "blue"];
