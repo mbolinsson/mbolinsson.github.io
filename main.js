@@ -1,4 +1,4 @@
-let hettan = document.querySelector("#hettan");
+let hettan = document.querySelector(".hettan");
 let oneMore = 0;
 
 const words = [
@@ -22,12 +22,12 @@ function extraTrevlig() {
   hettan.style.opacity = "1";
   oneMore++;
   console.log(oneMore);
-  window.setTimeout(wait, 1000);
+  window.setTimeout(wait, 2500);
 }
 
 function wait() {
   hettan.style.opacity = "0";
-  window.setTimeout(extraTrevlig, 1000);
+  window.setTimeout(extraTrevlig, 2500);
 }
 
 extraTrevlig();

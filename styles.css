@@ -2,11 +2,43 @@ body {
   text-align: center;
   font-family: "Lacquer", sans-serif;
   box-sizing: border-box;
+  background-color: rgb(199, 151, 63);
+  color: #333333;
 }
 
 h1 {
-  font-size: 15vw;
-  margin: 4.5vh 0.5vw 0 0.5vw;
+  font-size: 20vw;
+  margin: 4.5vh 5vw 0 5vw;
   opacity: 1;
+  transition: 2.5s;
+}
+
+a {
+  font-family: sans-serif;
+  font-size: 3vw;
   transition: 1s;
+}
+
+a:link,
+a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+.ant {
+  width: 10vw;
+  position: relative;
+  left: 10vw;
+  top: 30wh;
+}
+
+.ant2 {
+  width: 10vw;
+  position: relative;
+  left: -40vw;
+  top: 2rem;
 }
