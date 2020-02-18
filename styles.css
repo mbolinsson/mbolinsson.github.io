@@ -7,8 +7,8 @@ body {
 }
 
 h1 {
-  font-size: 20vw;
-  margin: 4.5vh 1rem 0 1rem;
+  font-size: 16vw;
+  margin: 4.5vh 3vw 0 3vw;
   opacity: 1;
   transition: 2.5s;
 }
@@ -31,9 +31,9 @@ a:hover {
 
 .ant {
   width: 10vw;
-  position: relative;
-  left: 10vw;
-  top: 30wh;
+  position: fixed;
+  bottom: 0;
+  right: 10vh;
 }
 
 .ant2 {
