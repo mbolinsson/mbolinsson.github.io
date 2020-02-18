@@ -37,18 +37,18 @@ const ant2 = document.querySelector(".ant2");
 myror();
 
 function myror() {
-  ant2.src = "./ant2.2.svg";
+  ant2.src = "./ant2.svg";
 
-  window.setTimeout(myror2, 400);
+  window.setTimeout(myror2, 100);
 }
 
 function myror2() {
-  ant2.src = "./ant2.3.svg";
+  ant2.src = "./ant2.2.svg";
   window.setTimeout(myror3, 100);
 }
 
 function myror3() {
-  ant2.src = "./ant2.svg";
+  ant2.src = "./ant2.3.svg";
   window.setTimeout(myror4, 300);
 }
 
