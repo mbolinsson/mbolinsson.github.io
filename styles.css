@@ -1,28 +1,47 @@
 body {
   text-align: center;
-  font-family: "Indie Flower", cursive;
+  font-family: "Krona One", sans-serif;
   box-sizing: border-box;
   background-color: rgb(199, 151, 63);
   color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+.list-box {
+  display: flex;
+  position: absolute;
+  justify-content: left;
+  min-width: 400px;
+  width: 30vw;
+  height: 60vh;
+  margin-top: 20vh;
+  border-left: 8px solid #333333;
 }
 
 ul {
-  margin: 10vh 2rem 0 0;
-  font-size: 3rem;
+  font-size: 1rem;
   list-style-type: none;
 }
 
-a {
-  font-size: 2rem;
-  transition: 1s;
-  position: fixed;
-  right: 2vh;
+.projects {
+  font-size: 2.5rem;
 }
 
-a:link,
-a:visited {
-  color: #333333;
-  text-decoration: none;
+.social-icon {
+  position: relative;
+  bottom: 0;
+  left: -13rem;
+  width: 2rem;
+}
+
+.linked {
+  margin-left: 1rem;
+}
+
+a {
+  margin-top: 52vh;
+  font-size: 4rem;
 }
 
 a:hover {
@@ -38,7 +57,14 @@ a:hover {
 
 .ant2 {
   width: 10vw;
-  position: relative;
-  left: -40vw;
-  top: 2rem;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+}
+
+.ant3 {
+  top: 30vh;
+  width: 9vw;
+  position: absolute;
+  right: 20vw;
 }
