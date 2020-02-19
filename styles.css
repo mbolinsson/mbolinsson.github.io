@@ -6,11 +6,10 @@ body {
   color: #333333;
 }
 
-h1 {
-  font-size: 20vw;
-  margin: 4.5vh 1vw 0 1vw;
-  opacity: 1;
-  transition: 2.5s;
+ul {
+  margin: 10vh 2rem 0 0;
+  font-size: 3rem;
+  list-style-type: none;
 }
 
 a {
@@ -42,13 +41,4 @@ a:hover {
   position: relative;
   left: -40vw;
   top: 2rem;
-}
-
-@media (min-width: 700px) {
-  a {
-    font-size: 2.5rem;
-  }
-  h1 {
-    margin: 4.5vh 4vw 0 4vw;
-  }
 }
