@@ -70,7 +70,7 @@ a:hover {
 }
 
 .steps {
-  width: 8vw;
+  width: 25vw;
   position: fixed;
   top: 0;
   right: -1rem;
@@ -83,5 +83,8 @@ a:hover {
   }
   .list-box {
     border-left: 8px solid #333333;
+  }
+  .steps {
+    width: 13vw;
   }
 }
