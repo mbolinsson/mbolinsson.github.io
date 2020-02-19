@@ -68,3 +68,10 @@ a:hover {
   position: absolute;
   right: 20vw;
 }
+
+.steps {
+  width: 8vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
