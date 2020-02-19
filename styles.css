@@ -25,6 +25,7 @@ ul {
 }
 
 .projects {
+  margin-top: -5vh;
   font-size: 2.5rem;
 }
 
@@ -74,4 +75,11 @@ a:hover {
   position: fixed;
   top: 0;
   right: -1rem;
+}
+
+@media (min-width: 530px) {
+  .projects {
+    margin-top: 0;
+    font-size: 2.5rem;
+  }
 }
