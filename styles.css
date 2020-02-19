@@ -13,16 +13,16 @@ ul {
 }
 
 a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: 1s;
+  position: fixed;
+  right: 2vh;
 }
 
 a:link,
 a:visited {
   color: #333333;
   text-decoration: none;
-  position: fixed;
-  right: 10vh;
 }
 
 a:hover {
