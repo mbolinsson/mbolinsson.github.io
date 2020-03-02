@@ -6,27 +6,18 @@ var media = window.matchMedia("(min-width: 550px)");
 let projects = [
   {
     titel: "Time Machine",
-    bread:
-      "jghj been working on a time machine, so far it´o sendpeaple to antropocen",
+    bread: "jghj been working on a time machine.",
     id: "1"
   },
   {
-    titel: "Rocket lancher",
-    bread:
-      "I´ve been sdfsdfsdf on a time machine, so sdfsdfs to sendpeaple to sdfssdfsd",
+    titel: "Cold Fusion",
+    bread: "I´ve been sdfsdfsdf on a time machine, so sdfsdfs to sendpeaple",
     id: "2"
   },
   {
-    titel: "Infaltebul Tube Man",
-    bread:
-      "sdff been working on a sdf, so far it´s only e to sendpeaple to antropocen",
+    titel: "Perpetual",
+    bread: "sdff been working on a sdf.",
     id: "3"
-  },
-  {
-    titel: "Infaltebul Tube Man",
-    bread:
-      "vbnbv been working on a time machine, possible to sendpeaple to antropocen",
-    id: "4"
   }
 ];
 renderHTML(projects);
@@ -57,7 +48,7 @@ function mediachange() {
         let listItem = event.target.closest("#list-item");
         let tjena = listItem.attributes["key"].value;
         console.log("hej");
-        document.getElementById(tjena).style.fontSize = ".6rem";
+        document.getElementById(tjena).style.fontSize = ".8rem";
         document.getElementById(tjena).style.opacity = "100";
       });
     });

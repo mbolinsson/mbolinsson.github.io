@@ -1,29 +1,30 @@
 body {
   text-align: center;
-  font-family: "Krona One", sans-serif;
+  font-family: "Josefin Sans";
   box-sizing: border-box;
-  background-color: rgba(153, 145, 28, 0.37);
-  color: #333333;
+  background-color: rgba(141, 74, 74, 0.699);
+  color: #f7f7f7;
   display: flex;
   justify-content: center;
 }
 
 .list-box {
+  border-left: 2px solid #e7e7e7;
   display: flex;
   position: absolute;
   justify-content: left;
-  min-width: 370px;
+  min-width: 250px;
   max-width: 70vw;
   width: 30vw;
-  height: 60vh;
-  margin: 12vh 0 0 -5vw;
+  height: 50vh;
+  margin: 15vh 0 0 -5vw;
   text-align: left;
 }
 
 a,
 a:visited {
   text-decoration: none;
-  color: #333333;
+  color: #f7f7f7;
   transition: 0.3s;
 }
 
@@ -36,24 +37,26 @@ li {
 }
 
 ul {
+  margin-left: -6vw;
   font-size: 0.9rem;
   list-style-type: none;
 }
 
 .projects-heading {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
 }
 
 .bread-text {
   margin-top: 0.4rem;
-  font-size: 0.1rem;
+  font-size: 0.6rem;
 }
 
 .social-box {
-  position: absolute;
-  bottom: 0.5vh;
-  filter: opacity(90%);
+  position: fixed;
+  bottom: 0vh;
+  opacity: 90%;
+  left: 3vw;
 }
 
 .social-icon {
@@ -62,7 +65,7 @@ ul {
 }
 
 .social-icon:hover {
-  filter: opacity(50%);
+  opacity: 50%;
 }
 
 .linked {
@@ -75,14 +78,14 @@ ul {
 }
 
 .ant1 {
-  width: 45px;
+  width: 31px;
   position: fixed;
   bottom: 0;
   right: 10vh;
 }
 
 .ant2 {
-  width: 45px;
+  width: 32px;
   position: absolute;
   left: 10vw;
   top: 6vh;
@@ -90,7 +93,7 @@ ul {
 
 .ant3 {
   z-index: 5;
-  width: 40px;
+  width: 27px;
   top: 15vh;
   margin-left: 5vw;
   position: fixed;
@@ -98,16 +101,26 @@ ul {
 }
 
 .steps {
-  width: 15rem;
+  width: 10rem;
   position: fixed;
   top: 0;
   right: -2rem;
 }
 
 @media only screen and (min-width: 530px) {
+  ul {
+    margin-left: 0;
+  }
+
   .list-box {
-    border-left: 3px solid #333333;
+    border-left: 2px solid #e7e7e7;
     margin-top: 20vh;
+    height: 60vh;
+  }
+  .social-box {
+    position: absolute;
+    bottom: 0.5vh;
+    opacity: 90%;
   }
   .ant3 {
     top: 30vh;
@@ -121,7 +134,6 @@ ul {
 
 @media only screen and (min-width: 750px) {
   .list-box {
-    border-left: 3px solid #333333;
     margin-top: 20vh;
   }
 
@@ -137,7 +149,7 @@ ul {
     right: 15vw;
   }
   .steps {
-    width: 35vw;
+    width: 20vw;
   }
 }
 
@@ -147,12 +159,10 @@ ul {
     right: 35vw;
   }
   .ant1 {
-    width: 50px;
-    position: fixed;
-    bottom: 0;
+    width: 40px;
     right: 40vh;
   }
   .steps {
-    width: 30vw;
+    width: 17vw;
   }
 }
