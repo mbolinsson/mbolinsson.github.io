@@ -2,7 +2,7 @@ body {
   text-align: center;
   font-family: "Krona One", sans-serif;
   box-sizing: border-box;
-  background-color: rgba(153, 145, 28, 0.76);
+  background-color: rgba(153, 145, 28, 0.479);
   color: #333333;
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@ a:visited {
 }
 
 li {
-  margin-top: 1.4rem;
+  margin-top: 1rem;
 }
 
 .project-items:hover {
@@ -46,7 +46,7 @@ ul {
 }
 
 .bread-text {
-  display: block;
+  margin-top: 0.4rem;
   font-size: 0.1rem;
 }
 
@@ -89,6 +89,7 @@ ul {
 }
 
 .ant3 {
+  z-index: 5;
   width: 45px;
   top: 15vh;
   margin-left: 5vw;
@@ -104,9 +105,6 @@ ul {
 }
 
 @media only screen and (min-width: 530px) {
-  .projects-heading {
-    margin-top: 0;
-  }
   .list-box {
     border-left: 3px solid #333333;
     margin-top: 20vh;
@@ -122,9 +120,6 @@ ul {
 }
 
 @media only screen and (min-width: 750px) {
-  .projects-heading {
-    margin-top: 0;
-  }
   .list-box {
     border-left: 3px solid #333333;
     margin-top: 20vh;
@@ -143,5 +138,21 @@ ul {
   }
   .steps {
     width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .ant3 {
+    top: 30vh;
+    right: 35vw;
+  }
+  .ant1 {
+    width: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 40vh;
+  }
+  .steps {
+    width: 30vw;
   }
 }
