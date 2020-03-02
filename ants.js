@@ -9,39 +9,32 @@ blackhole1();
 function myror() {
   ant1.src = "./images/ant1.2.svg";
   ant2.src = "./images/ant2.svg";
-
   window.setTimeout(myror2, 50);
 }
 
 function myror2() {
   ant1.src = "./images/ant1.3.svg";
   ant2.src = "./images/ant2.2.svg";
-
-  hide = false;
   window.setTimeout(myror3, 90);
 }
 
 function myror3() {
   ant1.src = "./images/ant1.11.svg";
   ant2.src = "./images/ant2.3.svg";
-
   window.setTimeout(myror4, 100);
 }
 
 function myror4() {
   ant1.src = "./images/ant1.12.svg";
   ant2.src = "./images/ant2.2.svg";
-
   window.setTimeout(myror, 70);
 }
 
 // Scared Ant
 
-ant3.addEventListener("mouseover", scaredAnt);
-
-function scaredAnt() {
+ant3.addEventListener("mouseover", () => {
   hide = true;
-}
+});
 
 function blackhole1() {
   if (hide) {
@@ -67,5 +60,6 @@ function blackhole4() {
 
 function hidingant() {
   ant3.src = "./images/ant3gone.svg";
+  hide = false;
   window.setTimeout(blackhole1, 3500);
 }
