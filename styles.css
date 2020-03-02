@@ -15,7 +15,7 @@ body {
   min-width: 400px;
   width: 30vw;
   height: 60vh;
-  margin-top: 10vh;
+  margin-top: 18vh;
   text-align: left;
 }
 
@@ -83,14 +83,14 @@ ul {
 }
 
 .ant3 {
-  width: 50px;
-  top: 30px;
+  width: 45px;
+  top: 15vh;
   position: fixed;
-  right: 1vw;
+  right: 20vw;
 }
 
 .steps {
-  width: 18rem;
+  width: 15rem;
   position: fixed;
   top: 0;
   right: -2rem;
