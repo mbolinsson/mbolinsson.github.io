@@ -2,7 +2,7 @@ body {
   text-align: center;
   font-family: "Krona One", sans-serif;
   box-sizing: border-box;
-  background-color: rgba(243, 221, 93, 0.733);
+  background-color: rgba(226, 189, 88, 0.76);
   color: #333333;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ a,
 a:visited {
   text-decoration: none;
   color: #333333;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 li {
@@ -46,6 +46,11 @@ ul {
 
 .social-icon {
   width: 2rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  filter: opacity(50%);
 }
 
 .linked {
@@ -79,7 +84,7 @@ ul {
 }
 
 .steps {
-  width: 390px;
+  width: 15rem;
   position: fixed;
   top: 0;
   right: -2rem;

@@ -37,7 +37,7 @@ function myror4() {
 
 // Scared Ant
 
-ant3.addEventListener("mouseenter", scaredAnt);
+ant3.addEventListener("mouseover", scaredAnt);
 
 function scaredAnt() {
   hide = true;
