@@ -69,22 +69,22 @@ ul {
 }
 
 .ant1 {
-  width: 45px;
+  width: 50px;
   position: fixed;
   bottom: 0;
   right: 10vh;
 }
 
 .ant2 {
-  width: 45px;
+  width: 50px;
   position: absolute;
   left: 10vw;
   top: 6vh;
 }
 
 .ant3 {
-  width: 40px;
-  top: 50px;
+  width: 50px;
+  top: 30px;
   position: fixed;
   right: 1vw;
 }
@@ -106,9 +106,26 @@ ul {
   }
   .ant3 {
     top: 30vh;
-    right: 20vw;
+    right: 5vw;
   }
   .steps {
-    width: 25rem;
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-heading {
+    margin-top: 0;
+  }
+  .list-box {
+    border-left: 3px solid #333333;
+    margin-top: 20vh;
+  }
+  .ant3 {
+    top: 30vh;
+    right: 27vw;
+  }
+  .steps {
+    width: 35vw;
   }
 }
