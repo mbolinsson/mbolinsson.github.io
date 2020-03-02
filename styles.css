@@ -15,7 +15,7 @@ body {
   min-width: 400px;
   width: 30vw;
   height: 60vh;
-  margin-top: 20vh;
+  margin-top: 15vh;
   text-align: left;
 }
 
@@ -31,7 +31,7 @@ li {
 }
 
 .project-items:hover {
-  color: rgb(255, 255, 255);
+  filter: opacity(50%);
 }
 
 ul {
@@ -42,6 +42,12 @@ ul {
 .projects-heading {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.social-box {
+  position: absolute;
+  bottom: 0.5vh;
+  filter: opacity(90%);
 }
 
 .social-icon {
@@ -78,9 +84,9 @@ ul {
 
 .ant3 {
   width: 40px;
-  top: 30vh;
+  top: 16vh;
   position: absolute;
-  right: 20vw;
+  right: 3vw;
 }
 
 .steps {
@@ -96,6 +102,11 @@ ul {
   }
   .list-box {
     border-left: 3px solid #333333;
+    margin-top: 20vh;
+  }
+  .ant3 {
+    top: 30vh;
+    right: 20vw;
   }
   .steps {
     width: 25rem;
