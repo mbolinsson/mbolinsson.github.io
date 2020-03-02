@@ -2,7 +2,7 @@ body {
   text-align: center;
   font-family: "Krona One", sans-serif;
   box-sizing: border-box;
-  background-color: rgba(153, 145, 28, 0.479);
+  background-color: rgba(153, 145, 28, 0.37);
   color: #333333;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ body {
   max-width: 70vw;
   width: 30vw;
   height: 60vh;
-  margin: 12vh 0 0 0;
+  margin: 12vh 0 0 -5vw;
   text-align: left;
 }
 
@@ -75,14 +75,14 @@ ul {
 }
 
 .ant1 {
-  width: 50px;
+  width: 45px;
   position: fixed;
   bottom: 0;
   right: 10vh;
 }
 
 .ant2 {
-  width: 50px;
+  width: 45px;
   position: absolute;
   left: 10vw;
   top: 6vh;
@@ -90,7 +90,7 @@ ul {
 
 .ant3 {
   z-index: 5;
-  width: 45px;
+  width: 40px;
   top: 15vh;
   margin-left: 5vw;
   position: fixed;
