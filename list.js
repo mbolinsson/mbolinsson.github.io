@@ -1,39 +1,41 @@
 "use strict";
 
-let list = document.querySelector("#list-item");
+const list = document.querySelector("#list-item");
+var media = window.matchMedia("(min-width: 550px)");
 
 let projects = [
   {
     titel: "Time Machine",
     bread:
-      "jghj been working on a time machine, so far it´o sendpeaple to antropocen"
+      "jghj been working on a time machine, so far it´o sendpeaple to antropocen",
+    id: "1"
   },
   {
     titel: "Rocket lancher",
     bread:
-      "I´ve been sdfsdfsdf on a time machine, so sdfsdfs to sendpeaple to sdfssdfsd"
+      "I´ve been sdfsdfsdf on a time machine, so sdfsdfs to sendpeaple to sdfssdfsd",
+    id: "2"
   },
   {
     titel: "Infaltebul Tube Man",
     bread:
-      "sdff been working on a sdf, so fjkljkljkljk hjk hkj hkj hjk hkjk hkjar it´s only e to sendpeaple to antropocen"
+      "sdff been working on a sdf, so far it´s only e to sendpeaple to antropocen",
+    id: "3"
   },
   {
-    titel: "Infaltel Tube Man",
+    titel: "Infaltebul Tube Man",
     bread:
-      "vbnbv been working on a time machine, phjkhj khj kh khjk hkjossible to sendpeaple to antropocen"
+      "vbnbv been working on a time machine, possible to sendpeaple to antropocen",
+    id: "4"
   }
 ];
 renderHTML(projects);
 
 function template(project) {
-  let id = Date.now();
-  let template = `<li id="list-item" key="${id}">
+  let template = `<li id="list-item" key="${project.id}">
     <a class="project-items" id="project-titel" href="./">${project.titel}</a>
-    <p class="bread-text" id="${id}">${project.bread}</p>
-    
+    <p class="bread-text" id="${project.id}">${project.bread}</p>
   </li>`;
-  console.log(id);
 
   return template;
 }
@@ -46,23 +48,26 @@ function renderHTML(projects) {
   });
 }
 
-let thelist = document.querySelectorAll("#project-titel");
+if (media.matches) {
+  let thelist = document.querySelectorAll("#project-titel");
 
-thelist.forEach(item => {
-  item.addEventListener("mouseover", () => {
-    let listItem = event.target.closest("#list-item");
-    let tjena = listItem.attributes["key"].value;
-
-    document.getElementById(tjena).style.fontSize = ".8rem";
-    document.getElementById(tjena).style.opacity = "100";
+  thelist.forEach(item => {
+    item.addEventListener("mouseover", () => {
+      let listItem = event.target.closest("#list-item");
+      let tjena = listItem.attributes["key"].value;
+      console.log("hej");
+      document.getElementById(tjena).style.fontSize = ".8rem";
+      document.getElementById(tjena).style.opacity = "100";
+    });
   });
-});
 
-thelist.forEach(item => {
-  item.addEventListener("mouseleave", () => {
-    let listItem = event.target.closest("#list-item");
-    let tjena = listItem.attributes["key"].value;
-    document.getElementById(tjena).style.fontSize = "0";
-    document.getElementById(tjena).style.opacity = "0";
+  thelist.forEach(item => {
+    item.addEventListener("mouseleave", () => {
+      let listItem = event.target.closest("#list-item");
+      let tjena = listItem.attributes["key"].value;
+      document.getElementById(tjena).style.fontSize = "0";
+      document.getElementById(tjena).style.opacity = "0";
+    });
   });
-});
+} else {
+}
