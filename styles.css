@@ -12,11 +12,11 @@ body {
   display: flex;
   position: absolute;
   justify-content: left;
-  min-width: 250px;
+  min-width: 330px;
   max-width: 70vw;
   width: 30vw;
   height: 50vh;
-  margin: 15vh 0 0 -5vw;
+  margin: 12vh 0 0 -5vw;
   text-align: left;
 }
 
@@ -45,13 +45,17 @@ ul {
   margin-bottom: 2rem;
 }
 
+#project-titel {
+  font-size: 1rem;
+}
+
 .bread-text {
   bottom: 2.8vh;
   transition: 0.3s;
   padding: 5px;
   border: 1px solid white;
   margin-top: 0.4rem;
-  font-size: 0.6rem;
+  font-size: 0.72rem;
 }
 
 .social-box {
@@ -79,6 +83,13 @@ ul {
   font-size: 4rem;
 }
 
+.lamp {
+  position: absolute;
+  margin-left: 1rem;
+  top: -4rem;
+  width: 3rem;
+}
+
 .ant1 {
   width: 31px;
   position: fixed;
@@ -87,6 +98,7 @@ ul {
 }
 
 .ant2 {
+  display: none;
   width: 32px;
   position: absolute;
   left: 10vw;
@@ -96,13 +108,14 @@ ul {
 .ant3 {
   z-index: 5;
   width: 27px;
-  top: 15vh;
+  top: 12vh;
   margin-left: 5vw;
   position: fixed;
-  right: 20vw;
+  right: 25vw;
 }
 
 .steps {
+  display: none;
   width: 10rem;
   position: fixed;
   top: 0;
@@ -124,12 +137,22 @@ ul {
     bottom: 0.5vh;
     opacity: 90%;
   }
+  .bread-text {
+    transition: 0.11s;
+    font-size: 0;
+    opacity: 0;
+  }
+  .ant2 {
+    display: block;
+  }
   .ant3 {
+    display: block;
     top: 30vh;
     margin-left: 10vw;
     right: 2vw;
   }
   .steps {
+    display: block;
     width: 50vw;
   }
 }
@@ -138,12 +161,6 @@ ul {
   .list-box {
     border-left: 2px solid #e7e7e7;
     margin-top: 20vh;
-  }
-
-  .bread-text {
-    transition: 0.11s;
-    font-size: 0;
-    opacity: 0;
   }
 
   .ant3 {
