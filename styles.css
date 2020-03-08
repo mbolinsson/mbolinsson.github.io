@@ -131,9 +131,14 @@ ul {
     margin-top: 20vh;
     height: 60vh;
   }
+
+  .projects-heading {
+    font-size: 1.7rem;
+    margin-bottom: -4vh;
+  }
   .social-box {
-    position: absolute;
-    bottom: 0.5vh;
+    position: relative;
+    bottom: -45vh;
     opacity: 90%;
   }
   .bread-text {
