@@ -13,13 +13,13 @@ function send(data) {
 
 function template(project) {
   return `<li id="list-item" key="${project.id}">
-    <a class="project-items" id="project-titel" href="./">${project.titel}</a>
+    <a class="project-items" id="project-titel" href="${project.link}">${project.titel}</a>
     <p class="bread-text" id="${project.id}">${project.bread}</p>
   </li>`;
 }
 
 function renderHTML(projectss) {
-  projectss.forEach(project => {
+  projectss.forEach((project) => {
     let newListItem = template(project);
     let innerHTML = list.innerHTML + newListItem;
     list.innerHTML = innerHTML;
@@ -30,7 +30,7 @@ function mediachange() {
   if (media.matches) {
     const thelist = document.querySelectorAll("#project-titel");
 
-    thelist.forEach(item => {
+    thelist.forEach((item) => {
       item.addEventListener("mouseover", () => {
         eventy(event, ".8rem", "100");
       });
