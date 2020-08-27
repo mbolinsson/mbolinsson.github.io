@@ -8,6 +8,51 @@ body {
   justify-content: center;
 }
 
+.darknes {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 6;
+  transition: .1s
+}
+
+.lightning {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 247, 0, 0.55);
+  z-index: 6;
+  transition: .1s
+}
+
+.div-btn-lamp {
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+  position: relative;
+  top: 60vh;
+  left: 35vw;
+  z-index: 7;
+}
+
+.btn-lamp {
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(206, 206, 206, 0.445);
+  outline: none;
+}
+
+.btn-border-bottom {
+  border-bottom: 2px solid grey;
+}
+
+.btn-border-top {
+  border-top: 2px solid grey;
+}
+
 .list-box {
   display: flex;
   position: absolute;
@@ -84,9 +129,11 @@ ul {
 
 .lamp {
   margin-left: 1rem;
-  top: -4rem;
+  top: -.05rem;
   position: absolute;
   width: 3rem;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 .ant1 {

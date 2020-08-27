@@ -1,4 +1,5 @@
 // Scared Ant
+console.log("Snälla ge mig ett jobb bara");
 
 const ant3 = document.querySelector(".ant3");
 let antAlreadyHiding = false;
