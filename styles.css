@@ -15,7 +15,7 @@ body {
   top: 0;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 6;
-  transition: .1s
+  transition: 0.15s ease-in-out;
 }
 
 .lightning {
@@ -25,23 +25,33 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 247, 0, 0.55);
   z-index: 6;
-  transition: .1s
+  transition: 0.15s ease-in-out;
+}
+
+#skojja {
+  position: absolute;
+  z-index: 7;
+  top: 60vh;
+  left: 75vw;
+  transition: .5s;
+  transform: rotate(-10deg);
 }
 
 .div-btn-lamp {
-  padding: 5px;
+  padding: 7px;
   background-color: white;
   border-radius: 3px;
   position: relative;
-  top: 60vh;
+  top: 40vh;
   left: 35vw;
   z-index: 7;
+  transition: .13s;
 }
 
 .btn-lamp {
-  width: 35px;
-  height: 35px;
-  border: 1px solid rgba(206, 206, 206, 0.445);
+  width: 55px;
+  height: 55px;
+  border: 2px 1px solid rgba(206, 206, 206, 0.907);
   outline: none;
 }
 
@@ -141,6 +151,7 @@ ul {
   position: fixed;
   bottom: 0;
   right: 10vh;
+  z-index: 10;
 }
 
 .ant2 {
@@ -149,6 +160,7 @@ ul {
   position: absolute;
   left: 10vw;
   top: 6vh;
+  z-index: 10;
 }
 
 .ant3 {
@@ -158,6 +170,7 @@ ul {
   margin-left: 5vw;
   position: fixed;
   right: 25vw;
+  z-index: 10;
 }
 
 .steps {
