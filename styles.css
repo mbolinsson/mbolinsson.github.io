@@ -32,7 +32,8 @@ body {
   position: absolute;
   z-index: 7;
   top: 60vh;
-  left: 75vw;
+  /* left: 75vw; */
+  right: 30%;
   transition: .5s;
   transform: rotate(-10deg);
 }
@@ -227,6 +228,10 @@ ul {
 }
 
 @media only screen and (min-width: 750px) {
+  #skojja {
+    right: 20%;
+  }
+
   .list-box {
     border-left: 2px solid #e7e7e7;
     margin-top: 20vh;
